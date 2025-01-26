@@ -166,7 +166,7 @@ Terimakasih Sudah Memakai Product Mizzuu
 `
 await client.sendMessage(m.key.remoteJid, {document: fs.readFileSync('./package.json'),mimetype:"image/jpg",fileName: `${global.version}`,jpegThumbnail: thumbmini, fileLength: '99999999999', caption: sopo,
 contextInfo: {mentionedJid: [m.sender,global.owner], externalAdReply: {showAdAttribution: true, thumbnailUrl: global.thumbnail, title: `© ${global.botname}`, body: `${global.version}`, sourceUrl: `${global.github}`, renderLargerThumbnail: true, mediaType: 1}}}, {quoted: m})
-      client.sendMessage(m.key.remoteJid,{audio:fs.readFileSync('./setting/angklung kane.mp3'), mimetype:'audio/mpeg', ptt:true}, {quoted:m})
+      client.sendMessage(m.key.remoteJid,{audio:{url:'https://files.catbox.moe/jtj250.mp3'}, mimetype:'audio/mpeg', ptt:true}, {quoted:m})
   }
   break
 case 'kerangajaib':{
